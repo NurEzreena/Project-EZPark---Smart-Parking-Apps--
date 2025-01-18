@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EZPark</string>
+    <string-array name="select_vehicle_prompt">Select Vehicle</string-array>
+</resources>

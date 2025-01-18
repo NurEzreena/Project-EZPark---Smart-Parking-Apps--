@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_marginTop="8dp"
+    android:background="#D9EAF7"
+    android:gravity="center_vertical">
+
+    <!-- Plate Number -->
+    <TextView
+        android:id="@+id/plateNumberTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="4dp"
+        android:text="Plate Number"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <!-- Model Name -->
+    <TextView
+        android:id="@+id/modelNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Model Name"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:padding="4dp" />
+
+    <!-- Edit Button -->
+    <ImageButton
+        android:id="@+id/edit_vehicle_1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Edit Vehicle"
+        android:scaleType="fitCenter"
+        android:src="@drawable/myvehicle5" />
+
+    <!-- Delete Button -->
+    <ImageButton
+        android:id="@+id/delete_vehicle_1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/myvehicle6"
+        android:contentDescription="Delete Vehicle"
+        android:scaleType="fitCenter" />
+</LinearLayout>

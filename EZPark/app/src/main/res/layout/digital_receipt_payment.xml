@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="#F3F3E0">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:background="@android:color/transparent"/>
+
+        <!-- Title Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DIGITAL RECEIPT"
+            android:letterSpacing="0.1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:layout_margin="3dp"/>
+
+        <!-- Main Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#2A3663"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Buttons Row -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:backgroundTint="#D9EAFD"
+                    android:background="@drawable/button_round">
+
+                    <!-- Payment Button -->
+                    <Button
+                        android:id="@+id/btn_goPayment"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Payment"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:backgroundTint="#6482AD"
+                        android:layout_margin="5dp"/>
+
+                </TableRow>
+
+                <!-- Separator Line -->
+                <TableRow>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/darker_gray"/>
+                </TableRow>
+
+                <!-- Vehicle List -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/receiptPaymentRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" />
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.widget.ScrollView>

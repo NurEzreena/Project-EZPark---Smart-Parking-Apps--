@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:columnCount="3"
+    android:background="#F3F3E0">
+
+    <!-- Date Value -->
+    <TextView
+        android:id="@+id/tv_payment_date_receipt"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="date"/>
+
+    <!-- Amount Value -->
+
+    <TextView
+        android:id="@+id/tv_amount_payment_receipt"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:text="amount" />
+
+    <ImageButton
+        android:id="@+id/history_receipt"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_gravity="end"
+        android:src="@drawable/parknpay_right_arrow"
+        android:background="@android:color/transparent"/>
+
+</GridLayout>

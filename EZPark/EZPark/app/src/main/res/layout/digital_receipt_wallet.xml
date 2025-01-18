@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="#F3F3E0">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_button"
+            android:background="@android:color/transparent"/>
+
+        <!-- Title Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DIGITAL RECEIPT"
+            android:letterSpacing="0.1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:layout_margin="3dp"/>
+
+        <!-- Main Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#2A3663"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Buttons Row -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:backgroundTint="#D9EAFD"
+                    android:background="@drawable/button_round">
+
+                    <!-- Payment Button -->
+                    <Button
+                        android:id="@+id/btn_goPayment"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Payment"
+                        android:textColor="@android:color/black"
+                        android:background="@android:color/transparent"
+                        android:textSize="18sp"
+                        android:layout_margin="5dp"/>
+
+                    <!-- Wallet Button -->
+                    <Button
+                        android:id="@+id/btn_goWallet"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Wallet"
+                        android:textSize="18sp"
+                        android:backgroundTint="#6482AD"
+                        android:textColor="@android:color/black"
+                        android:layout_margin="5dp"/>
+                </TableRow>
+
+                <!-- Labels Row -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <!-- Date Label -->
+                    <TextView
+                        android:text="Date"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <!-- Amount Label -->
+                    <TextView
+                        android:text="Amount (RM)"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+
+                <!-- Separator Line -->
+                <TableRow>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/darker_gray"/>
+                </TableRow>
+
+                <!-- Data Grid -->
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:columnCount="3"
+                    android:background="#F3F3E0">
+
+
+                    <!-- Date Value -->
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:text="01/01/2025"/>
+
+                    <!-- Amount Value -->
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:text="100.00" />
+
+                </GridLayout>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.widget.ScrollView>

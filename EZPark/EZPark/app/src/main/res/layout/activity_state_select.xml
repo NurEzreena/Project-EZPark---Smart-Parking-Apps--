@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="#F3F3E0">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Back Button -->
+            <ImageView
+                android:id="@+id/backState"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Back Button"
+                android:src="@drawable/back" />
+
+            <!-- Header Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="STATE"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Scrollable Content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <!-- Table Layout for State Rows -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <!-- Row: Kuala Lumpur -->
+                <TableRow
+                    android:id="@+id/select_state_kuala_lumpur"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#D9EAFD"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_height="80dp"
+                        android:layout_width="80dp"
+                        android:src="@drawable/kuala_lumpur"
+                        android:contentDescription="Kuala Lumpur Icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="Kuala Lumpur"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp" />
+                </TableRow>
+
+                <!-- Row: Selangor -->
+                <TableRow
+                    android:id="@+id/select_state_selangor"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#D9EAFD"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_height="80dp"
+                        android:layout_width="80dp"
+                        android:src="@drawable/selangor"
+                        android:contentDescription="Selangor Icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="Selangor"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp" />
+                </TableRow>
+
+                <!-- Row: Perak -->
+                <TableRow
+                    android:id="@+id/select_state_perak"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#D9EAFD"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_height="80dp"
+                        android:layout_width="80dp"
+                        android:src="@drawable/perak"
+                        android:contentDescription="Perak Icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="Perak"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp" />
+                </TableRow>
+
+                <!-- Row: Penang -->
+                <TableRow
+                    android:id="@+id/select_state_pulau_pinang"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#D9EAFD"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_height="80dp"
+                        android:layout_width="80dp"
+                        android:src="@drawable/penang"
+                        android:contentDescription="Penang Icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="Pulau Pinang"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp" />
+                </TableRow>
+
+                <!-- Row: Kedah -->
+                <TableRow
+                    android:id="@+id/select_state_kedah"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#D9EAFD"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_height="80dp"
+                        android:layout_width="80dp"
+                        android:src="@drawable/kedah"
+                        android:contentDescription="Kedah Icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="Kedah"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp" />
+                </TableRow>
+                <!-- row terengganu -->
+                <TableRow
+                    android:id="@+id/select_state_terengganu"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#D9EAFD"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_height="80dp"
+                        android:layout_width="80dp"
+                        android:src="@drawable/terengganu"
+                        android:contentDescription="Terengganu Icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="Terengganu"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp" />
+                </TableRow>
+
+                <!-- Row: Kelantan -->
+                <TableRow
+                    android:id="@+id/select_state_kelantan"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#D9EAFD"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_height="80dp"
+                        android:layout_width="80dp"
+                        android:src="@drawable/kelantan"
+                        android:contentDescription="Kelantan Icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="Kelantan"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp" />
+                </TableRow>
+
+                <!-- Row: Pahang -->
+                <TableRow
+                    android:id="@+id/select_state_pahang"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#D9EAFD"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_height="80dp"
+                        android:layout_width="80dp"
+                        android:src="@drawable/pahang"
+                        android:contentDescription="Pahang Icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="Pahang"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp" />
+                </TableRow>
+
+                <!-- Row: Johor Bahru -->
+                <TableRow
+                    android:id="@+id/select_state_johor_bahru"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#D9EAFD"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_height="80dp"
+                        android:layout_width="80dp"
+                        android:src="@drawable/johor"
+                        android:contentDescription="Johor Bahru Icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="Johor Bahru"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp" />
+                </TableRow>
+
+                <!-- Row: Negeri Sembilan -->
+                <TableRow
+                    android:id="@+id/select_state_negeri_sembilan"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#D9EAFD"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_height="80dp"
+                        android:layout_width="80dp"
+                        android:src="@drawable/negeri_sembilan"
+                        android:contentDescription="Negeri Sembilan Icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="Negeri Sembilan"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp" />
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</android.widget.ScrollView>

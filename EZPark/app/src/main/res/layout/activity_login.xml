@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F8E9"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!-- Icon Section -->
+    <ImageView
+        android:id="@+id/car_icon"
+        android:layout_width="149dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_car_location" />
+
+    <!-- Tab Selector -->
+    <LinearLayout
+        android:id="@+id/tab_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#2439A0"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/login_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#FFFF"
+            android:text="Login"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/new_user_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#2439A0"
+            android:text="New User"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Login Form -->
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="50dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#2439A0">
+
+        <EditText
+            android:id="@+id/username_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username/Email"
+            android:padding="12dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#b2c6e4"
+            android:layout_marginBottom="10dp"
+            android:drawableEnd="@drawable/ic_account" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:padding="12dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#b2c6e4"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword"
+            android:drawableEnd="@drawable/ic_lock" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#5A8DEE"
+            android:text="Login"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>

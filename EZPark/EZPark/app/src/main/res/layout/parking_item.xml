@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Data Grid -->
+<GridLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:columnCount="3"
+    android:background="#F3F3E0">
+
+    <TableLayout
+        android:padding="10dp"
+        android:background="@drawable/rounded_corner_setting">
+
+        <GridLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="RM"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/PaymentAmountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:padding="5dp"/>
+
+        </GridLayout>
+
+
+        <TableRow
+            android:padding="5dp">
+
+            <!-- Date Value -->
+            <TextView
+                android:id="@+id/PlateNumberTextView"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="plateNumber"/>
+
+            <!-- Amount Value -->
+            <TextView
+                android:id="@+id/DurationTextView"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="duration" />
+
+            <TextView
+                android:id="@+id/PaymentDateTextView"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="display date"/>
+
+            <TextView
+                android:id="@+id/StateTextView"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="state"/>
+        </TableRow>
+
+    </TableLayout>
+
+</GridLayout>

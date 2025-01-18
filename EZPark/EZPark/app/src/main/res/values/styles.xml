@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomSpinnerStyle">
+        <item name="android:textColor">#FFFFFF</item> <!-- White text color -->
+        <item name="android:background">#808080</item> <!-- Grey background -->
+    </style>
+</resources>

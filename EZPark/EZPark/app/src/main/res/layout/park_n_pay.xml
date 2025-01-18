@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3E0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:id="@+id/main_layout">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_button"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/tv_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PARK N PAY"
+            android:letterSpacing="0.1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:layout_margin="3dp" />
+
+        <LinearLayout
+            android:id="@+id/inner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#2A3663"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/parkNpayLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:contentDescription="Logo"
+                android:src="@drawable/parknpaylogo" />
+
+            <LinearLayout
+                android:id="@+id/spinner_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:gravity="center_vertical">
+
+                <Spinner
+                    android:id="@+id/spinner_selectVehicle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/select_vehicle_prompt"
+                    android:background="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_date_chosen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="Select Date"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical" />
+
+                <ImageButton
+                    android:id="@+id/date_calendar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/parknpay_calendar"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Calendar Icon" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_parking_duration_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.2"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="PARKING DURATION"
+                android:textColor="@android:color/white" />
+
+            <View
+                android:id="@+id/line_view"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableLayout
+                android:id="@+id/time_buttons_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/hourChosenInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@android:color/white" />
+
+                <!-- First Row -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_1_hour"
+                        android:layout_width="109dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#CBDCEB"
+                        android:text="1 HOUR"
+                        android:textColor="@android:color/black" />
+
+                    <Button
+                        android:id="@+id/button_2_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#CBDCEB"
+                        android:text="2 HOURS"
+                        android:textColor="@android:color/black" />
+                </TableRow>
+
+                <!-- Second Row -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_3_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#CBDCEB"
+                        android:text="3 HOURS"
+                        android:textColor="@android:color/black" />
+
+                    <Button
+                        android:id="@+id/button_4_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#CBDCEB"
+                        android:text="4 HOURS"
+                        android:textColor="@android:color/black" />
+                </TableRow>
+            </TableLayout>
+
+
+            <Button
+                android:id="@+id/ParkNPay_pay_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CBDCEB"
+                android:layout_gravity="center"
+                android:text="PAY"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
